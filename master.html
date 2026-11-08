@@ -1,2 +1,37 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#cb242d"><title>Aviclaire · Master Board</title><link rel="stylesheet" href="daily-style.css?v=collaboratif"></head><body><aside><div class="brand-row"><a class="brand" href="index.html">◈ <span>aviclaire<small>MASTER BOARD</small></span></a><div class="session-tools"><span id="master-user"></span><a href="index.html">Application</a><a id="master-logout" hidden>Déconnexion</a></div></div><nav aria-label="Administration" hidden><button data-master-tab="supervision">Supervision</button><button data-master-tab="membres">Collaborateurs</button><button data-master-tab="activite">Activité</button><button data-master-tab="controle">Contrôle des données</button></nav></aside><main><header><div><small id="eyebrow">ESPACE PROPRIÉTAIRE</small><h1>Master Board</h1></div></header><div id="master-status" role="status"></div><div id="master-content"></div><footer>Aviclaire · Les autorisations sont vérifiées par le serveur.</footer></main><script type="module" src="administration.js"></script></body></html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Aviclaire · Master Board</title>
+  <link rel="stylesheet" href="master-style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="pwa-style.css">
+<meta name="aviclaire-shell-version" content="922d9fe8a798d38d1e8d832a"></head>
+<body>
+  <a class="skip-link" href="#master-content">Aller au contenu</a>
+  <aside class="master-topbar">
+    <div class="brand-row">
+      <a class="brand" href="index.html" aria-label="Aviclaire, ouvrir l’application"><span class="brand-mark" aria-hidden="true">◈</span><span>aviclaire<small>MASTER BOARD</small></span></a>
+      <div class="session-tools"><span id="master-user"></span><a class="application-link" href="index.html">Ouvrir l’application <span aria-hidden="true">↗</span></a><a id="master-logout" hidden>Déconnexion</a></div>
+    </div>
+    <nav aria-label="Administration" hidden>
+      <button data-master-tab="supervision">Supervision</button>
+      <button data-master-tab="membres">Collaborateurs</button>
+      <button data-master-tab="activite">Activité</button>
+      <button data-master-tab="controle">Contrôle des données</button>
+    </nav>
+  </aside>
+  <main>
+    <header class="page-header"><div><small id="eyebrow">ESPACE PROPRIÉTAIRE</small><h1 id="master-title">Master Board</h1><p id="master-description">Supervisez votre exploitation et les accès de votre équipe.</p></div><span class="owner-label">Administration</span></header>
+    <div id="master-status" role="status" aria-live="polite" hidden></div>
+    <div id="master-content" tabindex="-1" aria-busy="true"></div>
+    <footer><span>Aviclaire · Master Board</span><span>Les autorisations sont vérifiées par le serveur.</span></footer>
+  </main>
+  <script type="module" src="administration.js"></script>
+  <script type="module" src="pwa.js"></script>
+</body>
+</html>
