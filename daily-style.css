@@ -16,3 +16,10 @@
 @media(max-width:1050px){.home-money-grid{grid-template-columns:1fr 1fr}.home-money-grid .home-cash{grid-column:1/-1;min-height:220px}.home-main-amount{font-size:40px}.home-money-grid article{padding:24px}.home-total-amount{font-size:29px}.home-total dl{grid-template-columns:1fr 1fr;gap:15px}.home-reconciliation{gap:16px 24px}.home-reconciliation .home-reconciliation-result{margin-left:0}}
 @media(max-width:600px){.home-overview-line{gap:9px}.home-overview-line p{font-size:13px}.home-sync{font-size:10px}.home-period{margin-bottom:17px;font-size:11px}.home-money-grid{grid-template-columns:1fr;gap:12px}.home-money-grid .home-cash{grid-column:auto;min-height:232px}.home-money-grid article{padding:22px;border-radius:15px}.home-main-amount{font-size:clamp(27px,8.4vw,38px);letter-spacing:-.9px}.home-money-grid h2{margin-bottom:11px}.home-total-amount{font-size:29px}.home-total dl{margin:18px 0 8px}.home-entry-actions{position:relative;grid-template-columns:1fr;gap:10px;margin-top:18px}.home-entry-actions button{min-height:52px}.home-reconciliation{display:grid;grid-template-columns:1fr 1fr;gap:18px 14px;padding:18px}.home-reconciliation .home-reconciliation-result{grid-column:1/-1;padding:14px 0 0;border-left:0;border-top:1px solid var(--home-border)}.home-reconciliation-result strong{font-size:17px}.home-entry-band{margin-bottom:18px}}
 @media(prefers-reduced-motion:reduce){.home-dashboard *{scroll-behavior:auto}}
+/* Keep the two daily actions reachable on a phone while reviewing totals. */
+@media(max-width:600px){
+ .home-dashboard{padding-bottom:110px}
+ .home-entry-actions{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:0;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:#fff;border-top:1px solid var(--home-border);box-shadow:0 -4px 20px #17191d10}
+ .home-entry-actions button{min-height:52px;padding:10px 8px;font-size:12px;gap:5px;line-height:1.35}
+ .home-entry-actions button>span{font-size:16px}
+}
