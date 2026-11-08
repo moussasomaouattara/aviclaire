@@ -7,6 +7,7 @@
 @media(max-width:360px){main{padding:18px 12px}.metrics{grid-template-columns:1fr}.connection-note button{padding:8px}.auth-card h2{font-size:23px}}
 
 [hidden]{display:none!important}
+.cash-movement-note{display:block;margin-top:6px;line-height:1.5;max-width:38em}
 
 /* Scoped to the daily overview; forms and detailed registers keep their UI. */
 .home-dashboard{--home-ink:var(--app-navy);--home-muted:var(--app-muted);--home-border:var(--app-border);--home-accent:var(--app-navy);--home-important:var(--app-important);color:var(--home-ink)}

@@ -31,3 +31,4 @@ body .pwa-tools{border-top:1px solid var(--accent);color:var(--accent);font-size
 /* Journal de caisse : montants, actions et formulaires restent lisibles sur le terrain. */
 .cash-important{color:var(--important);font-variant-numeric:tabular-nums}.cash-number{white-space:nowrap}.cash-row-actions{min-width:130px;align-items:stretch}.cash-row-actions button{font-size:14px;flex:1 1 auto}.cash-operation-field select{max-width:100%}#cash-at{max-width:220px}
 @media(max-width:759px){.cash-row-actions{width:100%;display:grid;grid-template-columns:1fr}.cash-number{white-space:normal}.cash-row-actions button{width:100%}}
+@media(min-width:760px){#master-content .cash-number{min-width:130px}#master-content table td:first-child{min-width:92px}}
