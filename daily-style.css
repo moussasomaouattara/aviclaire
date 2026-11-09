@@ -52,6 +52,9 @@ footer{font-size:12px;line-height:1.65}
 
 .brand>.brand-mark{color:var(--app-accent);font-size:30px;font-weight:500;line-height:1}
 
+/* Les dessins accompagnent le titre sans repousser les montants. */
+.app-header-art .farm-art{max-height:76px}
+
 /* Scoped to the daily overview; forms and detailed registers keep their UI. */
 .home-dashboard{--home-ink:var(--app-navy);--home-muted:var(--app-muted);--home-border:var(--app-border);--home-accent:var(--app-navy);--home-important:var(--app-important);color:var(--home-ink)}
 .home-overview-line{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.home-overview-line p{margin:0;color:var(--home-ink);font-weight:700;font-size:14px}.home-sync{display:inline-flex;align-items:center;gap:7px;padding:8px 11px;border:1px solid var(--app-border);border-radius:8px;color:var(--app-muted);background:#fff;font-size:11px;line-height:1.5}.home-sync:before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--app-important);flex-shrink:0}.home-sync.is-current:before{background:var(--app-navy)}.home-period{margin:8px 0 22px;color:var(--home-muted);font-size:12px;line-height:1.6}
