@@ -5,35 +5,36 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#102344">
   <title>Aviclaire · Master Board</title>
-  <link rel="stylesheet" href="master-style.css?release=c564265c43cd446d624cab5a">
+  <link rel="stylesheet" href="master-style.css?release=e579883b88e5424d6ea4318e">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" type="image/svg+xml" href="icon.svg">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="pwa-style.css?release=c564265c43cd446d624cab5a">
-<meta name="aviclaire-shell-version" content="c564265c43cd446d624cab5a"></head>
+  <link rel="stylesheet" href="pwa-style.css?release=e579883b88e5424d6ea4318e">
+<meta name="aviclaire-shell-version" content="e579883b88e5424d6ea4318e"></head>
 <body>
   <a class="skip-link" href="#master-content">Aller au contenu</a>
   <aside class="master-topbar">
     <div class="brand-row">
-      <a class="brand" href="index.html?actualiser=c564265c43cd446d624cab5a" aria-label="Aviclaire, ouvrir l’application"><span class="brand-mark" aria-hidden="true">◈</span><span>aviclaire<small>MASTER BOARD</small></span></a>
-      <div class="session-tools"><span id="master-user"></span><a class="application-link" href="index.html?actualiser=c564265c43cd446d624cab5a">Ouvrir l’application <span aria-hidden="true">↗</span></a><a id="master-logout" hidden>Déconnexion</a></div>
+      <a class="brand" href="index.html?actualiser=e579883b88e5424d6ea4318e" aria-label="Aviclaire, ouvrir l’application"><span class="brand-mark" aria-hidden="true">◈</span><span>aviclaire<small>MASTER BOARD</small></span></a>
+      <div class="session-tools"><span id="master-user"></span><a class="application-link" href="index.html?actualiser=e579883b88e5424d6ea4318e">Ouvrir l’application <span aria-hidden="true">↗</span></a><a id="master-logout" hidden>Déconnexion</a></div>
     </div>
-    <nav aria-label="Administration" hidden>
-      <button data-master-tab="supervision">Supervision</button>
-      <button data-master-tab="caisse">Caisse et mouvements</button>
-      <button data-master-tab="apports">Apports des associés</button>
-      <button data-master-tab="membres">Collaborateurs</button>
-      <button data-master-tab="activite">Activité</button>
-      <button data-master-tab="controle">Contrôle des données</button>
-    </nav>
   </aside>
+  <button id="master-menu-toggle" type="button" class="secondary" aria-controls="master-sidebar" aria-expanded="false" hidden>Rubriques du Master Board</button>
+  <div class="master-layout">
+    <aside id="master-sidebar" class="master-sidebar" hidden>
+      <label class="master-search">Trouver une rubrique<input id="master-section-search" type="search" placeholder="Dépenses, caisse, équipe…" autocomplete="off"></label>
+      <nav aria-label="Administration" hidden></nav>
+      <p id="master-search-empty" class="note" hidden>Aucune rubrique correspondante.</p>
+      <p class="sidebar-foot">Votre espace de contrôle.<br>Accès réservé au propriétaire.</p>
+    </aside>
   <main>
     <header class="page-header"><div><small id="eyebrow">ESPACE PROPRIÉTAIRE</small><h1 id="master-title">Master Board</h1><p id="master-description">Supervisez votre exploitation et les accès de votre équipe.</p></div><span class="owner-label">Administration</span></header>
     <div id="master-status" role="status" aria-live="polite" hidden></div>
     <div id="master-content" tabindex="-1" aria-busy="true"></div>
     <footer><span>Aviclaire · Master Board</span><span>Les autorisations sont vérifiées par le serveur.</span></footer>
   </main>
-  <script type="module" src="administration.js?release=c564265c43cd446d624cab5a"></script>
-  <script type="module" src="pwa.js?release=c564265c43cd446d624cab5a"></script>
+  </div>
+  <script type="module" src="administration.js?release=e579883b88e5424d6ea4318e"></script>
+  <script type="module" src="pwa.js?release=e579883b88e5424d6ea4318e"></script>
 </body>
 </html>
